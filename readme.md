@@ -2,13 +2,11 @@
 
 > Extract the article title of a HTML document or website
 
-
 ## Install
 
 ```
 $ npm install --global article-title-cli
 ```
-
 
 ## Usage
 
@@ -24,12 +22,6 @@ $ article-title --help
     Fabulous macOS Tips & Tricks
 ```
 
-
 ## Related
 
 - [article-title](https://github.com/sindresorhus/article-title) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

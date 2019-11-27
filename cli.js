@@ -15,10 +15,6 @@ const cli = meow(`
 	  Fabulous macOS Tips & Tricks
 `);
 
-function init(data) {
-	console.log(articleTitle(data));
-}
-
 const input = cli.input[0];
 
 if (!input && process.stdin.isTTY) {
@@ -26,8 +22,14 @@ if (!input && process.stdin.isTTY) {
 	process.exit(1);
 }
 
-if (input) {
-	init(fs.readFileSync(input, 'utf8'));
-} else {
-	getStdin().then(init);
-}
+const init = data => {
+	console.log(articleTitle(data));
+};
+
+(async () => {
+	if (input) {
+		init(fs.readFileSync(input, 'utf8'));
+	} else {
+		init(await getStdin());
+	}
+})();
