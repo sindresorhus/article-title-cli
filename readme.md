@@ -1,4 +1,4 @@
-# article-title-cli [![Build Status](https://travis-ci.org/sindresorhus/article-title-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/article-title-cli)
+# article-title-cli
 
 > Extract the article title of a HTML document or website
 
