@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import test from 'ava';
 import execa from 'execa';
 
@@ -9,7 +9,8 @@ test('main', async t => {
 
 test('stdin', async t => {
 	const {stdout} = await execa('./cli.js', {
-		input: fs.readFileSync('fixture.html')
+		input: fs.readFileSync('fixture.html'),
 	});
+
 	t.is(stdout, 'urls-md');
 });

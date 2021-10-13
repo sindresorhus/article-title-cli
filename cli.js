@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-'use strict';
-const fs = require('fs');
-const meow = require('meow');
-const getStdin = require('get-stdin');
-const articleTitle = require('article-title');
+import fs from 'node:fs';
+import process from 'node:process';
+import meow from 'meow';
+import getStdin from 'get-stdin';
+import articleTitle from 'article-title';
 
 const cli = meow(`
 	Usage
@@ -13,7 +13,9 @@ const cli = meow(`
 	Example
 	  $ curl -L https://blog.sindresorhus.com/macos-tips-tricks-13046cf377f8 | article-title
 	  Fabulous macOS Tips & Tricks
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 

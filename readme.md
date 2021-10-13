@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --global article-title-cli
+```sh
+npm install --global article-title-cli
 ```
 
 ## Usage
