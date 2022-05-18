@@ -11,7 +11,7 @@ const cli = meow(`
 	  $ curl -L <url> | article-title
 
 	Example
-	  $ curl -L https://blog.sindresorhus.com/macos-tips-tricks-13046cf377f8 | article-title
+	  $ curl -L https://medium.com/sindre-sorhus/macos-tips-tricks-13046cf377f8 | article-title
 	  Fabulous macOS Tips & Tricks
 `, {
 	importMeta: import.meta,
