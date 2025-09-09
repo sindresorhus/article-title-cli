@@ -1,6 +1,6 @@
 {
 	"name": "article-title-cli",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"description": "Extract the article title of a HTML document or website",
 	"license": "MIT",
 	"repository": "sindresorhus/article-title-cli",
