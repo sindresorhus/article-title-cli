@@ -10,8 +10,8 @@ npm install --global article-title-cli
 
 ## Usage
 
-```
-$ article-title --help
+```sh
+article-title --help
 
   Usage
     $ article-title <file>
@@ -24,4 +24,4 @@ $ article-title --help
 
 ## Related
 
-- [article-title](https://github.com/sindresorhus/article-title) - API for this module
+- [article-title](https://github.com/sindresorhus/article-title) - API for this package

@@ -28,10 +28,8 @@ const init = data => {
 	console.log(articleTitle(data));
 };
 
-(async () => {
-	if (input) {
-		init(fs.readFileSync(input, 'utf8'));
-	} else {
-		init(await getStdin());
-	}
-})();
+if (input) {
+	init(fs.readFileSync(input, 'utf8'));
+} else {
+	init(await getStdin());
+}
